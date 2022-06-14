@@ -1,0 +1,290 @@
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+<div id="page-head">
+<h1 id="title">Sandwich order form</h1>
+
+<p id="description">Here you can customise your very own sandwich! Please fill out the form and we can get you a sandwich based off your preferences at our earliest conveinience! Thank you!</p>
+</div>
+
+<!-- inside each input field include text placeholders that describe the purpose id="name-label" id="email-label" etc -->
+<form id="survey-form">
+
+  <!-- Name element -->
+  <div> <label for="name" id="name-label">Name</label></div>
+  <div><input 
+              id="name" 
+              type="text" 
+              placeholder="Name" 
+              class="form-shape"
+              required />
+  </div>
+
+  <!-- Email element -->
+  <div> <label for="email" id="email-label">Email</label< /div>
+      <div> <input 
+                   id="email" 
+                   type="email" 
+                   placeholder="Email" 
+                   class="form-shape"
+                   required />
+      </div>
+      
+
+      <!-- number picker element -->
+      <div><label for="number" id="number-label">How many times do you eat sandwiches a week?</label></div>
+      <div>
+        <input 
+               type="number" 
+               id="number" 
+               min="0" 
+               max="10" 
+               placeholder="0" 
+               class="form-shape"
+               required>
+      </div>
+
+      
+      <!-- dropdown menu element-->
+      <div>
+        <p> Favorite Bread </p>
+        <select 
+                id="dropdown" 
+                name="bread" 
+                class="form-shape"
+                required />
+        <option disabled selected value>Select your bread preference</option>
+        <option value="Sourdough">Sourdough</option>
+        <option value="Wheat">Wheat</option>
+        <option value="Focaccia">Focaccia</option>
+        <option value="Potato">Potato</option>
+        <option value="Ciabatta">Ciabatta</option>
+        <option value="Multigrain">Multigrain</option>
+        <option value="Boule">Boule</option>
+        <option value="Baguette">Baguette</option>
+        <option value="Rye">Rye</option>
+        </select>
+      </div>
+    
+    <!-- Radio Buttons -->
+    <div>
+      <p> Would you like a Hot or Cold Sandwich?</p>
+    
+    <label>
+      <input
+             name="sandwich-temp"
+             value ="Cold"
+             type="radio"
+             checked
+             />Cold
+    </label>
+     <label> 
+       <input
+              name="sandwich-temp"
+              value="Hot"
+              type="radio"
+              />Hot
+    </label>
+    </div>
+             
+   
+    
+      <!-- radio buttons name attribute
+check boxes value attribute -->
+    <div>
+<div><p>Pick your toppings</p><div>
+  <h2>Veggies</h2>
+      <label>
+        <input 
+               name="Veggies"
+               type="checkbox" 
+               value="Lettuce"
+               >Lettuce</label>
+  
+  
+      <label><div>
+        <input 
+                    name="Veggies"
+                    type="checkbox"
+                    value="Tomato"
+               >Tomato</div></label>
+  
+      <label><div>
+        <input 
+               name="Veggies"
+               type="checkbox"
+               value="Onions"
+               >Onions</div></label>
+  
+  <label><div>
+    <input 
+           name="Veggies"
+           type="checkbox"
+           value="Spinach"
+           >Spinach</div></label>
+  
+  
+  <h2>Meat/Substitue</h2>
+    <label><div>
+      <input 
+             name="Meat"
+             type="checkbox"
+             value="Tofu"
+             >Tofu</div></label>
+  
+    <label><div>
+      <input 
+             name="Meat"
+                   type="checkbox"
+             value="Cucumber"
+             >Cucumber</div></label>
+  
+    <label><div>
+      <input 
+             name="Meat"
+             type="checkbox"
+             value="Turkey"
+             >Turkey</div></label>
+  
+    <label><div>
+      <input 
+             name="Meat"
+             type="checkbox"
+             value="Chicken"
+             >Chicken</div></label>
+  
+    <label><div>
+      <input 
+             name="Meat"
+             type="checkbox"
+             value="Bacon"
+             >Bacon</div></label>
+  
+    <label><div>
+      <input 
+             name="Meat"
+             type="checkbox"
+             value="Salami"
+             >Salami</div></label>
+  
+    <label><div>
+      <input 
+             name="Meat"
+             type="checkbox"
+             value="Roast-Beef"
+             >Roast Beef</div></label>
+  
+  <label><div>
+    <input 
+           name="Meat"
+           type="checkbox"
+           value="Meat-Balls"
+           >Meat Balls</div></label>
+  
+  
+  <h2>Cheese</h2>
+
+    <label><div>
+      <input 
+             name="Cheese"
+             type="checkbox"
+             value="American"
+             >American</div></label>
+  
+  <label><div>
+    <input 
+           name="Cheese"
+           type="checkbox"
+           value="Provolone">
+    Provolone</div></label>
+  
+  <label><div>
+    <input 
+           name="Cheese"
+           type="checkbox"
+           value="Cheddar"
+           >Cheddar</div></label>
+  
+  <label><div>
+    <input 
+           name="Cheese"
+           type="checkbox"
+           value="Gouda"
+           >Gouda</div></label>
+  
+  <label><div>
+    <input 
+           name="Cheese"
+           type="checkbox"
+           value="Swiss"
+           >Swiss</div></label>
+  
+  <label><div>
+    <input 
+           name="Cheese"
+           type="checkbox"
+           value="Mozarella"
+           >Mozzarella</div></label>
+  
+  <h2>Condiments</h2>
+  
+  <label><div>
+    <input 
+           name="Condiments"
+           type="checkbox"
+           value="Mustard"
+           >Mustard</div></label>
+  
+  <label><div>
+<input 
+       name="Condiments"
+       type="checkbox"
+       value="Mayonnaise"
+       >Mayonnaise</div></label>
+  
+  <label><div>
+    <input 
+           name="Condiments"
+           type="checkbox"
+           value="Sriracha"
+           >Sriracha</div></label>
+  
+  <label><div>
+    <input 
+           name="Condiments"
+           type="checkbox"
+           value="Balsamic-Vinagrette"
+           >Balsamic Vinagrette</div></label>
+    
+    <label><div>
+      <input 
+             name="Condiments"
+             type="checkbox"
+             value="Wasabi-Mayo"
+             >Wasabi Mayo</div></label>
+  
+    <label><div>
+      <input 
+             name="Condiments"
+             type="checkbox"
+             value="Marinara"
+             >Marinara</div></label>
+  </label>  
+    </div>
+
+      <div>
+        <p> Any comments or concerns?</p>
+        <textarea 
+                  id="comments" 
+                  name="comment" 
+                  placeholder="Enter comments here. . ."
+                  class="text-area-shape"
+                  
+                  ></textarea>
+
+        <button 
+                id="submit" 
+                type="submit"
+                class="submit-button">
+                submit</button>
+</form>
+</div>
